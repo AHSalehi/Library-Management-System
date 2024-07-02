@@ -7,7 +7,7 @@ public class MyApp {
         Library lib = new Library("Nit central library", "7a.m.-7p.m.",100);
         Scanner scn = new Scanner(System.in);
         String cmd;
-        if(lib.isLibOpen()){
+        if(!lib.isLibOpen()){
             while (true){
                 System.out.print("\033[H\033[2J");
                 System.out.println("***************************************************");
